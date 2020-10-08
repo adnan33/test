@@ -8,15 +8,15 @@ import sys
 
 # Complete the staircase function below.
 def staircase(n):
-    temp = []
+    temp_output = []
     k = 1
     for i in range(n):
         for j in range(n-k):
-            temp.append(" ")
+            temp_output.append(" ")
         for l in range(k):
-            temp.append("#")
-        print("".join(temp))
-        temp = []
+            temp_output.append("#")
+        print("".join(temp_output))
+        temp_output = []
         k+=1
 
 if __name__ == '__main__':
